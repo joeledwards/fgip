@@ -12,11 +12,16 @@ const keyPath = process.env.FGIP_KEY_PATH
 async function server () {
   app.use((req, res) => {
     console.info(`Request from ${req.ip}`)
-    res
-      .status(200)
-      .json({
-        ip: req.ip
-      })
+
+    const response = {
+      ip: req.ip
+    }
+
+    if (includeCountry) {
+      response.country = {}
+    }
+
+    res.status(200).json(response)
   })
 
   http.createServer(app).listen(bindPort, () => {
