@@ -9,13 +9,28 @@ const includeCountry = Boolean(process.env.FGIP_INCLUDE_COUNTRY)
 const certPath = process.env.FGIP_CERT_PATH
 const keyPath = process.env.FGIP_KEY_PATH
 
+console.info('Include Country:', includeCountry)
+
 async function server () {
   app.use((req, res) => {
-    console.info(`Request from ${req.ip}`)
+    const {
+      method,
+      ip,
+      path,
+      query,
+      headers
+    } = req
 
-    const response = {
-      ip: req.ip
+    const summary = {
+      method,
+      path,
+      query,
+      headers
     }
+
+    console.info(`Request from ${ip}\n${JSON.stringify(summary, null, 2)}`)
+
+    const response = { ip }
 
     if (includeCountry) {
       response.country = {}
