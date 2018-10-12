@@ -10,3 +10,10 @@ Useless
 - `FGIP_CERT_PATH` - SSL cert path
 - `FGIP_KEY_PATH` - SSL cert key path
 
+## Services
+
+- ip-api.com (free)
+- ipapi.com 😈
+- ipstack.com
+- geoip.nekudo.com 🔥
+
