@@ -12,8 +12,8 @@ Useless
 
 ## Services
 
-- ip-api.com (free)
-- ipapi.com 😈
-- ipstack.com
-- geoip.nekudo.com 🔥
+- ip-api.com 🎁
+- geoip.nekudo.com 🔥 
+- ipapi.com 💵 😈
+- ipstack.com 💵
 
