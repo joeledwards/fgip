@@ -14,6 +14,5 @@ Useless
 
 - ip-api.com 🎁
 - geoip.nekudo.com 🔥 
-- ipapi.com 💵 😈
-- ipstack.com 💵
+- ipapi.com / ipstack.com 💵 😈
 
